@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 240 5% 6%;
+		--foreground: 60 5% 90%;
+		--primary: 240 0% 90%;
+		--primary-foreground: 60 0% 0%;
+		--secondary: 240 4% 15%;
+		--secondary-foreground: 60 5% 85%;
+		--accent: 240 0% 13%;
+		--accent-foreground: 60 0% 100%;
+		--destructive: 0 60% 50%;
+		--destructive-foreground: 0 0% 98%;
+		--muted: 240 5% 25%;
+		--muted-foreground: 60 5% 85%;
+		--card: 240 4% 10%;
+		--card-foreground: 60 5% 90%;
+		--popover: 240 5% 15%;
+		--popover-foreground: 60 5% 85%;
+		--border: 240 6% 20%;
+		--input: 240 6% 20%;
+		--ring: 240 5% 90%;
+		--radius: 0.5rem;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground rubik;
+	}
+}
+
+a {
+	@apply transition duration-200 hover:text-white;
+}
+
+html {
+	width: 100vw;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.rubik {
+	font-family: Rubik;
+}
+
+.member__list {
+	@apply flex flex-wrap justify-center gap-6 gap-y-14;
+}
+
+.member {
+	@apply flex flex-col items-center justify-end gap-1 sm:gap-2 py-5 p-2 text-center rounded-lg bg-zinc-900 relative h-44;
+}
+
+.member:last-child {
+	@apply self-center;
+}
+
+.member__name {
+	@apply text-xl;
+}
+
+.member__job {
+	@apply text-base text-muted-foreground;
+}
+
+.member__titles {
+	@apply flex flex-col gap-1 sm:gap-2 mt-2;
+}
+
+.avatar__img {
+	@apply w-32 h-32 absolute -top-12;
+}
+
+.service-primary {
+	@apply bg-black rounded-lg flex flex-col p-4 pt-6 px-5 text-foreground gap-5;
+}
+
+.service-secondary {
+	@apply bg-secondary rounded-lg flex flex-col p-4 pt-6 px-5 text-foreground gap-2;
+}
+
+h1 {
+	@apply text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl;
+}
+
+h2 {
+	@apply text-xl font-semibold tracking-normal md:text-2xl lg:text-3xl;
+}
+
+p {
+	@apply mx-auto max-w-[700px] md:text-xl;
+}
+
+.service {
+	@apply pt-4;
+}
+
+.badge {
+	@apply inline-block rounded-lg px-3 py-1 text-sm;
+}
+
+--background: hsl(240 5% 6%);
+--foreground: hsl(60 5% 90%);
+--primary: hsl(240 0% 90%);
+--primary-foreground: hsl(60 0% 0%);
+--secondary: hsl(240 4% 15%);
+--secondary-foreground: hsl(60 5% 85%);
+--accent: hsl(240 0% 13%);
+--accent-foreground: hsl(60 0% 100%);
+--destructive: hsl(0 60% 50%);
+--destructive-foreground: hsl(0 0% 98%);
+--muted: hsl(240 5% 25%);
+--muted-foreground: hsl(60 5% 85%);
+--card: hsl(240 4% 10%);
+--card-foreground: hsl(60 5% 90%);
+--popover: hsl(240 5% 15%);
+--popover-foreground: hsl(60 5% 85%);
+--border: hsl(240 6% 20%);
+--input: hsl(240 6% 20%);
+--ring: hsl(240 5% 90%);
+--radius: hsl(0.5rem);
