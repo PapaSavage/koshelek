@@ -44,7 +44,7 @@
                 </div>
             </div>
             <NuxtImg loading="lazy" src="/solana3.jpg" alt="Hero"
-                class="mx-auto w-[1200px] h-[300px] overflow-hidden rounded-t-lg object-cover" />
+                class="mx-auto hidden sm:block w-[1200px] h-[300px] overflow-hidden rounded-t-lg object-cover" />
         </div>
         <a name="about"></a>
         <div class="bg-muted w-full py-12 lg:py-24 flex flex-col gap-6">
