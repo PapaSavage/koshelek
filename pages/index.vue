@@ -43,8 +43,8 @@
                     </a>
                 </div>
             </div>
-            <NuxtImg loading="lazy" src="/solana3.jpg" width="1270" height="300" alt="Hero"
-                class="mx-auto  overflow-hidden rounded-t-lg object-cover" />
+            <NuxtImg loading="lazy" src="/solana.png" width="1270" height="300" alt="Hero"
+                class="mx-auto overflow-hidden rounded-t-lg object-cover" />
         </div>
         <a name="about"></a>
         <div class="bg-muted w-full py-12 lg:py-24 flex flex-col gap-6">
@@ -113,7 +113,8 @@
             <div class="px-16 container grid sm:grid-cols-2 gap-8">
                 <div class="flex flex-col justify-center items-center gap-4">
                     <h1 class="leading-tight text-center">{{ $t('h1services') }} <span
-                            class="bg-zinc-800 text-muted-foreground px-2 rounded-2xl">solana</span> {{ $t('stackwithus') }}?
+                            class="bg-zinc-800 text-muted-foreground px-2 rounded-2xl">solana</span> {{ $t('stackwithus')
+                            }}?
                     </h1>
                     <NuxtImg loading="lazy" style="width: 200px;" class="hidden sm:inline-block" src="/Solana_logo.png"
                         alt="" />
